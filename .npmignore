@@ -1,0 +1,11 @@
+#for npmignore
+.vscode
+src
+coverage
+tests
+node_modules
+node_modules
+src
+public
+webpack.config.js
+docs 
