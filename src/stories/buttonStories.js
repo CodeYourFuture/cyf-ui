@@ -10,17 +10,18 @@ storiesOf("Button", module)
     <Button
       onClick={action("click")}
       label="Button"
-      className="btn btn-primary"
       type="btnPrimary"
     />
   ))
-  // .add("primary outline", () => (
-  //   <Button
-  //     label="Button"
-  //     onClick={action("click")}
-  //     className="btn btn-primary-outline"
-  //   />
-  // ))
+  .add("primary outline", () => (
+    <Button
+      label="Button"
+      onClick={action("click")}
+      className="btn btn-primary-outline"
+      type="btnPrimaryOutlined"
+
+    />
+  ))
   // .add("primary-light", () => (
   //   <Button
   //     onClick={action("click")}
