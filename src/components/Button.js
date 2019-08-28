@@ -16,19 +16,29 @@ const btnPrimaryOutlined = {
   border: "2px solid #03a9f4"
 }
 
+const btnPrimaryLight = {
+  name : "btnPrimaryLight",
+  color: "#2196f3",
+  background: "#b3e5fc"
+}
+
+const btnPrimaryGrayShadow ={
+  name :"btnPrimaryGrayShadow",
+  color: "#2196f3",
+  background: "#ffffff",
+  boxShadow: "0px 1px 10px rgba(0, 0, 0, 0.2), 0px 4px 5px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.14)"
+}
+
 //Add all buttons different  objects here 
 const buttonTypes = [
   btnPrimary,
-  btnPrimaryOutlined
+  btnPrimaryOutlined,
+  btnPrimaryLight,
+  btnPrimaryGrayShadow
 ] 
 
 //Return the wanted button styles according the type props that send to the component
-const getSelectedButtonStyle =(type)=>{
-
-  const x=   buttonTypes.find(btn=>btn.name === type)
- console.log(x)
- return x;
-}
+const getSelectedButtonStyle =(type)=>buttonTypes.find(btn=>btn.name === type);
 
 //The button styled component 
 const Button = styled.button`
@@ -45,7 +55,8 @@ const Button = styled.button`
   text-transform: capitalize;
   padding: 8px 30px;
   border-radius: 5px;
-  border:${props=>props.type.background?props.type.border :  "none"};
+  box-shadow : ${props=>props.type.background?props.type.boxShadow : "none"};
+  border:${props=>props.type.background?props.type.border : "none"};
   background : ${props=>props.type.background};
 `;
 

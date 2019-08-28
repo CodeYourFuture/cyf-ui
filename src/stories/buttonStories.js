@@ -22,20 +22,20 @@ storiesOf("Button", module)
 
     />
   ))
-  // .add("primary-light", () => (
-  //   <Button
-  //     onClick={action("click")}
-  //     label="Button"
-  //     className="btn btn-primary-light"
-  //   />
-  // ))
-  // .add("primary with gray shadow", () => (
-  //   <Button
-  //     label="Button"
-  //     onClick={action("click")}
-  //     className="btn btn-primary-gray-shadow"
-  //   />
-  // ))
+  .add("primary-light", () => (
+    <Button
+      onClick={action("click")}
+      label="Button"
+      type="btnPrimaryLight"
+    />
+  ))
+  .add("primary with gray shadow", () => (
+    <Button
+      label="Button"
+      onClick={action("click")}
+      type="btnPrimaryGrayShadow"
+    />
+  ))
   // .add("primary with shadow", () => (
   //   <Button
   //     label="Button"
