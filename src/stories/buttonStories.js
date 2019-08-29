@@ -152,13 +152,13 @@ storiesOf("Button", module)
       variant="btnCorner_5px"
     />
   ))
-  // .add("button rounded corners with 200px", () => (
-  //   <Button
-  //     onClick={action("click")}
-  //     label="Button"
-  //     variant="btn btn-corner-200px"
-  //   />
-  // ))
+  .add("button rounded corners with 200px", () => (
+    <Button
+      onClick={action("click")}
+      label="Button"
+      variant="btnCorner_200px"
+    />
+  ))
   // .add("chip", () => (
   //   <Button onClick={action("click")} label="Chip" variant="btn btn-chip" />
   // ))
