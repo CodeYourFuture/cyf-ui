@@ -139,10 +139,10 @@ const Button = styled.button`
   text-transform: capitalize;
   padding: 8px 30px;
   border-radius: 5px;
-  box-shadow : ${props=>props.variant.background?props.variant.boxShadow : "none"};
-  border:${props=>props.variant.border?props.variant.border : "none"};
+  box-shadow : ${props=>props.variant.boxShadow || "none"};
+  border:${props=>props.variant.border || "none"};
   background : ${props=>props.variant.background};
-  opacity: ${props=>props.variant.opacity?props.variant.opacity : "initial"}; 
+  opacity: ${props=>props.variant.opacity ||"initial"}; 
 `;
 
 export default  props => (
@@ -150,3 +150,5 @@ export default  props => (
     {props.label && <span>{props.label}</span>}
   </Button>
 );
+
+
