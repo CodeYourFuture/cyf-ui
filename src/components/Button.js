@@ -7,45 +7,51 @@ const btnPrimary = {
   name :"btnPrimary",
   color: "#ffffff",
   background: "#2196f3"
-}
+};
 
 const btnPrimaryOutlined = {
   name :"btnPrimaryOutlined",
    color: "#2196f3",
   background: "#ffffff",
   border: "2px solid #03a9f4"
-}
+};
 
 const btnPrimaryLight = {
   name : "btnPrimaryLight",
   color: "#2196f3",
   background: "#b3e5fc"
-}
+};
 
 const btnPrimaryGrayShadow ={
   name :"btnPrimaryGrayShadow",
   color: "#2196f3",
   background: "#ffffff",
   boxShadow: "0px 1px 10px rgba(0, 0, 0, 0.2), 0px 4px 5px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.14)"
-}
+};
 const btnPrimaryShadow = {
   name:"btnPrimaryShadow",
   color: "#2196f3",
   background: "#ffffff",
   boxShadow: "0px 2px 4px #03A9F4"
 
-}
+};
 const btnSecondary = {
   name : "btnSecondary",
   color: "#ffffff",
   background: "#4CAF50"
-}
+};
 const btnSecondaryOutline = {
   name:"btnSecondaryOutline",
    color: "#4CAF50",
   background: "#ffffff",
   border: "2px solid #4CAF50"
-}
+};
+const btnSecondaryLight ={
+  name:"btnSecondaryLight",
+  color: "#388E3C",
+  background: "#81C784",
+  opacity: "0.8"
+};
 //Add all buttons different  objects here 
 const buttonTypes = [
   btnPrimary,
@@ -54,7 +60,8 @@ const buttonTypes = [
   btnPrimaryGrayShadow,
   btnPrimaryShadow,
   btnSecondary,
-  btnSecondaryOutline
+  btnSecondaryOutline,
+  btnSecondaryLight
 ] 
 
 //Return the wanted button styles according the type props that send to the component
@@ -76,8 +83,9 @@ const Button = styled.button`
   padding: 8px 30px;
   border-radius: 5px;
   box-shadow : ${props=>props.type.background?props.type.boxShadow : "none"};
-  border:${props=>props.type.background?props.type.border : "none"};
+  border:${props=>props.type.border?props.type.border : "none"};
   background : ${props=>props.type.background};
+  opacity: ${props=>props.type.opacity?props.type.opacity : "initial"}; 
 `;
 
 export default  props => (
