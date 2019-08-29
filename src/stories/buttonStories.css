@@ -104,14 +104,14 @@ color: #f44336;
   background: #ffffff;
   box-shadow: 0px 2px 4px #F44336;
 }
-/* devider button styling */
-.btn-devider {
+/* divider button styling */
+.btn-divider {
   color:#ffffff;
   background: #BDBDBD;
 }
 
-.btn-devider-outline {
-color: #9E9E9E;
+.btn-divider-outline {
+ color: #9E9E9E;
   background: #ffffff;
   border: 2px solid #BDBDBD;
 }
