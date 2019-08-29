@@ -115,7 +115,7 @@ storiesOf("Button", module)
       variant="btnErrorShadow"
     />
   ))
-  // // devider Button
+  // devider Button
   // .add("divider", () => (
   //   <Button
   //     onClick={action("click")}
