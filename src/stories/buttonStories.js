@@ -130,13 +130,13 @@ storiesOf("Button", module)
       variant="btnDividerOutline"
     />
   ))
-  // .add("devider-light", () => (
-  //   <Button
-  //     onClick={action("click")}
-  //     label="Button"
-  //     variant="btn btn-devider-light"
-  //   />
-  // ))
+  .add("divider-light", () => (
+    <Button
+      onClick={action("click")}
+      label="Button"
+      variant="btnDividerLight"
+    />
+  ))
   // .add("devider with gray shadow", () => (
   //   <Button
   //     label="Button"
