@@ -101,13 +101,13 @@ storiesOf("Button", module)
       type="btnErrorLight"
     />
   ))
-  // .add("error with gray shadow", () => (
-  //   <Button
-  //     label="Button"
-  //     onClick={action("click")}
-  //     className="btn btn-error-gray-shadow"
-  //   />
-  // ))
+  .add("error with gray shadow", () => (
+    <Button
+      label="Button"
+      onClick={action("click")}
+      type="btnErrorGrayShadow"
+    />
+  ))
   // .add("error with shadow", () => (
   //   <Button
   //     label="Button"
