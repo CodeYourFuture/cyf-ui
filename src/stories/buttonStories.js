@@ -51,13 +51,13 @@ storiesOf("Button", module)
       type="btnSecondary"
     />
   ))
-  // .add("secondary outline", () => (
-  //   <Button
-  //     label="Button"
-  //     onClick={action("click")}
-  //     className="btn btn-secondary-outline"
-  //   />
-  // ))
+  .add("secondary outline", () => (
+    <Button
+      label="Button"
+      onClick={action("click")}
+      type="btnSecondaryOutline"
+    />
+  ))
   // .add("secondary-light", () => (
   //   <Button
   //     onClick={action("click")}

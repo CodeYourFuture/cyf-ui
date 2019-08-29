@@ -40,6 +40,12 @@ const btnSecondary = {
   color: "#ffffff",
   background: "#4CAF50"
 }
+const btnSecondaryOutline = {
+  name:"btnSecondaryOutline",
+   color: "#4CAF50",
+  background: "#ffffff",
+  border: "2px solid #4CAF50"
+}
 //Add all buttons different  objects here 
 const buttonTypes = [
   btnPrimary,
@@ -48,6 +54,7 @@ const buttonTypes = [
   btnPrimaryGrayShadow,
   btnPrimaryShadow,
   btnSecondary,
+  btnSecondaryOutline
 ] 
 
 //Return the wanted button styles according the type props that send to the component
@@ -78,4 +85,3 @@ export default  props => (
     {props.label && <span>{props.label}</span>}
   </Button>
 );
-//export default Button;
