@@ -58,6 +58,12 @@ const btnSecondaryGrayShadow = {
   background: "#ffffff",
   boxShadow: "0px 1px 10px rgba(0, 0, 0, 0.2), 0px 4px 5px rgba(0, 0, 0, 0.12),0px 2px 4px rgba(0, 0, 0, 0.14)"
 };
+const btnSecondaryShadow ={
+  name : "btnSecondaryShadow",
+  color: "#388E3C",
+  background: "#ffffff",
+  boxShadow: "0px 2px 4px #4CAF50"
+};
 //Add all buttons different  objects here 
 const buttonTypes = [
   btnPrimary,
@@ -68,7 +74,8 @@ const buttonTypes = [
   btnSecondary,
   btnSecondaryOutline,
   btnSecondaryLight,
-  btnSecondaryGrayShadow
+  btnSecondaryGrayShadow,
+  btnSecondaryShadow
 ] 
 
 //Return the wanted button styles according the type props that send to the component
