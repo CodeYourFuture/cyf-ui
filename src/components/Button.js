@@ -126,6 +126,12 @@ const btnDividerLight = {
   background: "#ffffff",
   boxShadow: "0px 1px 10px rgba(0, 0, 0, 0.2), 0px 4px 5px rgba(0, 0, 0, 0.12),0px 2px 4px rgba(0, 0, 0, 0.14)"
  };
+ const btnCorner_5px ={
+   name:"btnCorner_5px",
+   color: "#ffffff",
+  background: "#2196f3",
+  borderRadius: "5px" 
+ };
 //Add all buttons different  objects here 
 const buttonTypes = [
   btnPrimary,
@@ -146,7 +152,8 @@ const buttonTypes = [
   btnDivider,
   btnDividerOutline,
   btnDividerLight,
-  btnDividerGrayShadow
+  btnDividerGrayShadow,
+  btnCorner_5px
 ] 
 
 //Return the wanted button styles according the type props that send to the component
@@ -171,6 +178,8 @@ const Button = styled.button`
   border:${props=>props.variant.border || "none"};
   background : ${props=>props.variant.background};
   opacity: ${props=>props.variant.opacity ||"initial"}; 
+  border-radius: ${props=>props.variant.borderRadius || "none"};
+
 `;
 
 export default  props => (
