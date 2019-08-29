@@ -102,6 +102,12 @@ const btnErrorShadow = {
   background: "#ffffff",
   boxShadow: "0px 2px 4px #F44336"  
 };
+
+const btnDivider = {
+  name :"btnDivider",
+  color:"#ffffff",
+  background: "#BDBDBD"
+};
 //Add all buttons different  objects here 
 const buttonTypes = [
   btnPrimary,
@@ -118,7 +124,8 @@ const buttonTypes = [
   btnErrorOutline,
   btnErrorLight,
   btnErrorGrayShadow,
-  btnErrorShadow
+  btnErrorShadow,
+  btnDivider
 ] 
 
 //Return the wanted button styles according the type props that send to the component

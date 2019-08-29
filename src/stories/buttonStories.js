@@ -116,32 +116,32 @@ storiesOf("Button", module)
     />
   ))
   // devider Button
-  // .add("divider", () => (
-  //   <Button
-  //     onClick={action("click")}
-  //     label="Button"
-  //     className="btn btn-devider"
-  //   />
-  // ))
+  .add("divider", () => (
+    <Button
+      onClick={action("click")}
+      label="Button"
+      variant="btnDivider"
+    />
+  ))
   // .add("devider outline", () => (
   //   <Button
   //     label="Button"
   //     onClick={action("click")}
-  //     className="btn btn-devider-outline"
+  //     variant="btn btn-devider-outline"
   //   />
   // ))
   // .add("devider-light", () => (
   //   <Button
   //     onClick={action("click")}
   //     label="Button"
-  //     className="btn btn-devider-light"
+  //     variant="btn btn-devider-light"
   //   />
   // ))
   // .add("devider with gray shadow", () => (
   //   <Button
   //     label="Button"
   //     onClick={action("click")}
-  //     className="btn btn-devider-gray-shadow"
+  //     variant="btn btn-devider-gray-shadow"
   //   />
   // ))
   // //rounded buttons
@@ -149,53 +149,53 @@ storiesOf("Button", module)
   //   <Button
   //     onClick={action("click")}
   //     label="Button"
-  //     className="btn btn-corner-5px"
+  //     variant="btn btn-corner-5px"
   //   />
   // ))
   // .add("button rounded corners with 200px", () => (
   //   <Button
   //     onClick={action("click")}
   //     label="Button"
-  //     className="btn btn-corner-200px"
+  //     variant="btn btn-corner-200px"
   //   />
   // ))
   // .add("chip", () => (
-  //   <Button onClick={action("click")} label="Chip" className="btn btn-chip" />
+  //   <Button onClick={action("click")} label="Chip" variant="btn btn-chip" />
   // ))
   // //ellipse Button
   // .add("ellipse", () => (
   //   <Button
   //     onClick={action("click")}
   //     label="+"
-  //     className="btn btn-primary ellipse"
+  //     variant="btn btn-primary ellipse"
   //   />
   // ))
   // .add("ellipse outline", () => (
   //   <Button
   //     label="+"
   //     onClick={action("click")}
-  //     className="btn btn-primary-outline ellipse"
+  //     variant="btn btn-primary-outline ellipse"
   //   />
   // ))
   // .add("ellipse-light", () => (
   //   <Button
   //     onClick={action("click")}
   //     label="+"
-  //     className="btn btn-primary-light ellipse"
+  //     variant="btn btn-primary-light ellipse"
   //   />
   // ))
   // .add("ellipse with gray shadow", () => (
   //   <Button
   //     label="+"
   //     onClick={action("click")}
-  //     className="btn btn-primary-gray-shadow ellipse"
+  //     variant="btn btn-primary-gray-shadow ellipse"
   //   />
   // ))
   // .add("ellipse with shadow", () => (
   //   <Button
   //     label="+"
   //     onClick={action("click")}
-  //     className="btn btn-primary-shadow ellipse"
+  //     variant="btn btn-primary-shadow ellipse"
   //   />
   // ))
   // //secondary with vector
@@ -203,7 +203,7 @@ storiesOf("Button", module)
   //   <Button
   //     label="+ Button"
   //     onClick={action("click")}
-  //     className="btn btn-secondary"
+  //     variant="btn btn-secondary"
   //   />
   // ))
   // //
