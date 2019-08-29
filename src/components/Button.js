@@ -28,13 +28,20 @@ const btnPrimaryGrayShadow ={
   background: "#ffffff",
   boxShadow: "0px 1px 10px rgba(0, 0, 0, 0.2), 0px 4px 5px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.14)"
 }
+const btnPrimaryShadow = {
+  name:"btnPrimaryShadow",
+  color: "#2196f3",
+  background: "#ffffff",
+  boxShadow: "0px 2px 4px #03A9F4"
 
+}
 //Add all buttons different  objects here 
 const buttonTypes = [
   btnPrimary,
   btnPrimaryOutlined,
   btnPrimaryLight,
-  btnPrimaryGrayShadow
+  btnPrimaryGrayShadow,
+  btnPrimaryShadow
 ] 
 
 //Return the wanted button styles according the type props that send to the component
