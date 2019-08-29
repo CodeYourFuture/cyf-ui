@@ -2,7 +2,10 @@ import React from "react";
 import styled from 'styled-components';
 
 
-//Here starts our specific button styles
+//Here starts our specific button styles: 
+
+
+/* primary buttons styling */
 const btnPrimary = {
   name :"btnPrimary",
   color: "#ffffff",
@@ -35,6 +38,9 @@ const btnPrimaryShadow = {
   boxShadow: "0px 2px 4px #03A9F4"
 
 };
+
+
+/* secondary buttons styling */
 const btnSecondary = {
   name : "btnSecondary",
   color: "#ffffff",
@@ -64,10 +70,19 @@ const btnSecondaryShadow ={
   background: "#ffffff",
   boxShadow: "0px 2px 4px #4CAF50"
 };
+
+
+/* error buttons styling */
 const btnError ={
   name:"btnError",
   color: "#ffffff",
   background: "#f44336"
+};
+const btnErrorOutline ={
+  name :"btnErrorOutline",
+  color: "#f44336",
+  background: "#ffffff",
+  border: "2px solid #f44336"
 };
 //Add all buttons different  objects here 
 const buttonTypes = [
@@ -81,7 +96,8 @@ const buttonTypes = [
   btnSecondaryLight,
   btnSecondaryGrayShadow,
   btnSecondaryShadow,
-  btnError
+  btnError,
+  btnErrorOutline
 ] 
 
 //Return the wanted button styles according the type props that send to the component

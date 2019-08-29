@@ -87,13 +87,13 @@ storiesOf("Button", module)
       type="btnError"
     />
   ))
-  // .add("error outline", () => (
-  //   <Button
-  //     label="Button"
-  //     onClick={action("click")}
-  //     className="btn btn-error-outline"
-  //   />
-  // ))
+  .add("error outline", () => (
+    <Button
+      label="Button"
+      onClick={action("click")}
+      type="btnErrorOutline"
+    />
+  ))
   // .add("error-light", () => (
   //   <Button
   //     onClick={action("click")}
