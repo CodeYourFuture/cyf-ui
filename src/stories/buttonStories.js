@@ -10,7 +10,7 @@ storiesOf("Button", module)
     <Button
       onClick={action("click")}
       label="Button"
-      type="btnPrimary"
+      variant="btnPrimary"
     />
   ))
   .add("primary outline", () => (
@@ -18,7 +18,7 @@ storiesOf("Button", module)
       label="Button"
       onClick={action("click")}
       className="btn btn-primary-outline"
-      type="btnPrimaryOutlined"
+      variant="btnPrimaryOutlined"
 
     />
   ))
@@ -26,21 +26,21 @@ storiesOf("Button", module)
     <Button
       onClick={action("click")}
       label="Button"
-      type="btnPrimaryLight"
+      variant="btnPrimaryLight"
     />
   ))
   .add("primary with gray shadow", () => (
     <Button
       label="Button"
       onClick={action("click")}
-      type="btnPrimaryGrayShadow"
+      variant="btnPrimaryGrayShadow"
     />
   ))
   .add("primary with shadow", () => (
     <Button
       label="Button"
       onClick={action("click")}
-      type="btnPrimaryShadow"
+      variant="btnPrimaryShadow"
     />
   ))
   // secondary Button
@@ -48,35 +48,35 @@ storiesOf("Button", module)
     <Button
       onClick={action("click")}
       label="Button"
-      type="btnSecondary"
+      variant="btnSecondary"
     />
   ))
   .add("secondary outline", () => (
     <Button
       label="Button"
       onClick={action("click")}
-      type="btnSecondaryOutline"
+      variant="btnSecondaryOutline"
     />
   ))
   .add("secondary light", () => (
     <Button
       onClick={action("click")}
       label="Button"
-      type="btnSecondaryLight"
+      variant="btnSecondaryLight"
     />
   ))
   .add("secondary with gray shadow", () => (
     <Button
       label="Button"
       onClick={action("click")}
-      type="btnSecondaryGrayShadow"
+      variant="btnSecondaryGrayShadow"
     />
   ))
   .add("secondary with shadow", () => (
     <Button
       label="Button"
       onClick={action("click")}
-      type="btnSecondaryShadow"
+      variant="btnSecondaryShadow"
     />
   ))
   // error Button
@@ -84,35 +84,35 @@ storiesOf("Button", module)
     <Button
       onClick={action("click")}
       label="Button"
-      type="btnError"
+      variant="btnError"
     />
   ))
   .add("error outline", () => (
     <Button
       label="Button"
       onClick={action("click")}
-      type="btnErrorOutline"
+      variant="btnErrorOutline"
     />
   ))
   .add("error-light", () => (
     <Button
       onClick={action("click")}
       label="Button"
-      type="btnErrorLight"
+      variant="btnErrorLight"
     />
   ))
   .add("error with gray shadow", () => (
     <Button
       label="Button"
       onClick={action("click")}
-      type="btnErrorGrayShadow"
+      variant="btnErrorGrayShadow"
     />
   ))
   .add("error with shadow", () => (
     <Button
       label="Button"
       onClick={action("click")}
-      type="btnErrorShadow"
+      variant="btnErrorShadow"
     />
   ))
   // // devider Button

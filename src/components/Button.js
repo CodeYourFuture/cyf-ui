@@ -122,7 +122,7 @@ const buttonTypes = [
 ] 
 
 //Return the wanted button styles according the type props that send to the component
-const getSelectedButtonStyle =(type)=>buttonTypes.find(btn=>btn.name === type);
+const getSelectedButtonStyle =(variant)=>buttonTypes.find(btn=>btn.name === variant);
 
 //The button styled component 
 const Button = styled.button`
@@ -131,7 +131,7 @@ const Button = styled.button`
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
   line-height: 14px;
-   color: ${props=>props.type.color};
+   color: ${props=>props.variant.color};
   display: flex;
   align-items: center;
   text-align: center;
@@ -139,14 +139,14 @@ const Button = styled.button`
   text-transform: capitalize;
   padding: 8px 30px;
   border-radius: 5px;
-  box-shadow : ${props=>props.type.background?props.type.boxShadow : "none"};
-  border:${props=>props.type.border?props.type.border : "none"};
-  background : ${props=>props.type.background};
-  opacity: ${props=>props.type.opacity?props.type.opacity : "initial"}; 
+  box-shadow : ${props=>props.variant.background?props.variant.boxShadow : "none"};
+  border:${props=>props.variant.border?props.variant.border : "none"};
+  background : ${props=>props.variant.background};
+  opacity: ${props=>props.variant.opacity?props.variant.opacity : "initial"}; 
 `;
 
 export default  props => (
-  <Button type={getSelectedButtonStyle(props.type)}>
+  <Button variant={getSelectedButtonStyle(props.variant)}>
     {props.label && <span>{props.label}</span>}
   </Button>
 );
