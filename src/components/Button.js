@@ -84,6 +84,12 @@ const btnErrorOutline ={
   background: "#ffffff",
   border: "2px solid #f44336"
 };
+const btnErrorLight={
+  name:"btnErrorLight",
+  color: "#f44336",
+  background: "#FFCDD2",
+  opacity: "0.8"
+};
 //Add all buttons different  objects here 
 const buttonTypes = [
   btnPrimary,
@@ -97,7 +103,8 @@ const buttonTypes = [
   btnSecondaryGrayShadow,
   btnSecondaryShadow,
   btnError,
-  btnErrorOutline
+  btnErrorOutline,
+  btnErrorLight
 ] 
 
 //Return the wanted button styles according the type props that send to the component
