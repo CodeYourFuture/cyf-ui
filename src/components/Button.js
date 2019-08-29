@@ -138,6 +138,13 @@ const btnDividerLight = {
   background: "#2196f3",
   borderRadius: "200px",
  };
+ const btnChip= {
+   name:"btnChip",
+   color: "#ffffff",
+   background: "#2196f3",
+   padding : "5px 10px",
+   borderRadius: "200px"
+ };
 //Add all buttons different  objects here 
 const buttonTypes = [
   btnPrimary,
@@ -160,7 +167,8 @@ const buttonTypes = [
   btnDividerLight,
   btnDividerGrayShadow,
   btnCorner_5px,
-  btnCorner_200px
+  btnCorner_200px,
+  btnChip
 ] 
 
 //Return the wanted button styles according the type props that send to the component
@@ -168,12 +176,12 @@ const getSelectedButtonStyle =(variant)=>buttonTypes.find(btn=>btn.name === vari
 
 //The button styled component 
 const Button = styled.button`
-   font-style: normal;
+  font-style: normal;
   font-weight: 600;
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
   line-height: 14px;
-   color: ${props=>props.variant.color};
+  color: ${props=>props.variant.color};
   display: flex;
   align-items: center;
   text-align: center;
@@ -190,8 +198,8 @@ const Button = styled.button`
 `;
 
 export default  props => (
-  <Button variant={getSelectedButtonStyle(props.variant)}>
-    {props.label && <span>{props.label}</span>}
+  <Button onClick={props.onClick} variant={getSelectedButtonStyle(props.variant)}>
+    <span>{props.label && <span>{props.label}</span>}</span>
   </Button>
 );
 

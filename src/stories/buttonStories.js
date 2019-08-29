@@ -159,9 +159,9 @@ storiesOf("Button", module)
       variant="btnCorner_200px"
     />
   ))
-  // .add("chip", () => (
-  //   <Button onClick={action("click")} label="Chip" variant="btn btn-chip" />
-  // ))
+  .add("chip", () => (
+    <Button onClick={action("click")} label="Chip" variant="btnChip" />
+  ))
   // //ellipse Button
   // .add("ellipse", () => (
   //   <Button
