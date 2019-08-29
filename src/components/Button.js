@@ -35,13 +35,19 @@ const btnPrimaryShadow = {
   boxShadow: "0px 2px 4px #03A9F4"
 
 }
+const btnSecondary = {
+  name : "btnSecondary",
+  color: "#ffffff",
+  background: "#4CAF50"
+}
 //Add all buttons different  objects here 
 const buttonTypes = [
   btnPrimary,
   btnPrimaryOutlined,
   btnPrimaryLight,
   btnPrimaryGrayShadow,
-  btnPrimaryShadow
+  btnPrimaryShadow,
+  btnSecondary,
 ] 
 
 //Return the wanted button styles according the type props that send to the component
