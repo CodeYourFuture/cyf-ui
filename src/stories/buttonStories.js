@@ -162,14 +162,14 @@ storiesOf("Button", module)
   .add("chip", () => (
     <Button onClick={action("click")} label="Chip" variant="btnChip" />
   ))
-  // //ellipse Button
-  // .add("ellipse", () => (
-  //   <Button
-  //     onClick={action("click")}
-  //     label="+"
-  //     variant="btn btn-primary ellipse"
-  //   />
-  // ))
+  //ellipse Button
+  .add("ellipse", () => (
+    <Button
+      onClick={action("click")}
+      label="+"
+      variant="btnPrimaryEllipse"
+    />
+  ))
   // .add("ellipse outline", () => (
   //   <Button
   //     label="+"

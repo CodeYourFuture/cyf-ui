@@ -145,6 +145,17 @@ const btnDividerLight = {
    padding : "5px 10px",
    borderRadius: "200px"
  };
+ const ellipse = {
+  fontSize: "40px",
+  padding: "16px 20px",
+  borderRadius: "50%"
+ }
+ const btnPrimaryEllipse = {
+   ...btnPrimary,
+   ...ellipse,
+  name: "btnPrimaryEllipse",
+
+ };
 //Add all buttons different  objects here 
 const buttonTypes = [
   btnPrimary,
@@ -168,7 +179,8 @@ const buttonTypes = [
   btnDividerGrayShadow,
   btnCorner_5px,
   btnCorner_200px,
-  btnChip
+  btnChip,
+  btnPrimaryEllipse
 ] 
 
 //Return the wanted button styles according the type props that send to the component
@@ -178,7 +190,7 @@ const getSelectedButtonStyle =(variant)=>buttonTypes.find(btn=>btn.name === vari
 const Button = styled.button`
   font-style: normal;
   font-weight: 600;
-  font-size: 14px;
+  font-size:${props=>props.variant.fontSize || "14px"};
   font-family: 'Open Sans', sans-serif;
   line-height: 14px;
   color: ${props=>props.variant.color};
@@ -187,13 +199,12 @@ const Button = styled.button`
   text-align: center;
   letter-spacing: 0.75px;
   text-transform: capitalize;
-  padding: 8px 30px;
-  border-radius: 5px;
+  padding: ${props=>props.variant.padding || "8px 32px"};
   box-shadow : ${props=>props.variant.boxShadow || "none"};
   border:${props=>props.variant.border || "none"};
   background : ${props=>props.variant.background};
-  opacity: ${props=>props.variant.opacity ||"initial"}; 
-  border-radius: ${props=>props.variant.borderRadius || "none"};
+  opacity: ${props=>props.variant.opacity || "initial"}; 
+  border-radius: ${props=>props.variant.borderRadius || "50px"};
 
 `;
 
