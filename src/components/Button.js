@@ -176,6 +176,10 @@ const btnDividerLight = {
    ...ellipse,
    name :"btnPrimaryShadowEllipse"
  };
+ const btnSecondaryVector = {
+   ...btnSecondary,
+   name : "btnSecondaryVector"
+ };
 //Add all buttons different  objects here 
 const buttonTypes = [
   btnPrimary,
@@ -204,7 +208,8 @@ const buttonTypes = [
   btnPrimaryOutlineEllipse,
   btnPrimaryLightEllipse,
   btnPrimaryGrayShadowEllipse,
-  btnPrimaryShadowEllipse
+  btnPrimaryShadowEllipse,
+  btnSecondaryVector
 ] 
 
 //Return the wanted button styles according the type props that send to the component
@@ -228,7 +233,7 @@ const Button = styled.button`
   border:${props=>props.variant.border || "none"};
   background : ${props=>props.variant.background};
   opacity: ${props=>props.variant.opacity || "initial"}; 
-  border-radius: ${props=>props.variant.borderRadius || "50px"};
+  border-radius: ${props=>props.variant.borderRadius || "5px"};
 
 `;
 
