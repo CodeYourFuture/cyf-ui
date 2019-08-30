@@ -177,20 +177,20 @@ storiesOf("Button", module)
       variant="btnPrimaryOutlineEllipse"
     />
    ))
-  // .add("ellipse-light", () => (
-  //   <Button
-  //     onClick={action("click")}
-  //     label="+"
-  //     variant="btn btn-primary-light ellipse"
-  //   />
-  // ))
-  // .add("ellipse with gray shadow", () => (
-  //   <Button
-  //     label="+"
-  //     onClick={action("click")}
-  //     variant="btn btn-primary-gray-shadow ellipse"
-  //   />
-  // ))
+  .add("ellipse-light", () => (
+    <Button
+      onClick={action("click")}
+      label="+"
+      variant="btnPrimaryLightEllipse"
+    />
+  ))
+  .add("ellipse with gray shadow", () => (
+    <Button
+      label="+"
+      onClick={action("click")}
+      variant="btnPrimaryGrayShadowEllipse"
+    />
+  ))
   // .add("ellipse with shadow", () => (
   //   <Button
   //     label="+"
