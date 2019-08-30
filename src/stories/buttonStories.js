@@ -191,19 +191,19 @@ storiesOf("Button", module)
       variant="btnPrimaryGrayShadowEllipse"
     />
   ))
-  // .add("ellipse with shadow", () => (
-  //   <Button
-  //     label="+"
-  //     onClick={action("click")}
-  //     variant="btn btn-primary-shadow ellipse"
-  //   />
-  // ))
-  // //secondary with vector
-  // .add("secondary with vector", () => (
-  //   <Button
-  //     label="+ Button"
-  //     onClick={action("click")}
-  //     variant="btn btn-secondary"
-  //   />
-  // ))
-  // //
+  .add("ellipse with shadow", () => (
+    <Button
+      label="+"
+      onClick={action("click")}
+      variant="btnPrimaryShadowEllipse"
+    />
+  ))
+  //secondary with vector
+  .add("secondary with vector", () => (
+    <Button
+      label="+ Button"
+      onClick={action("click")}
+      variant="btnSecondaryVector"
+    />
+  ))
+  

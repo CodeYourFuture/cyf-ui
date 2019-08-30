@@ -171,6 +171,11 @@ const btnDividerLight = {
   ...ellipse,
   name: "btnPrimaryGrayShadowEllipse"
  };
+ const btnPrimaryShadowEllipse = {
+   ...btnPrimaryShadow,
+   ...ellipse,
+   name :"btnPrimaryShadowEllipse"
+ };
 //Add all buttons different  objects here 
 const buttonTypes = [
   btnPrimary,
@@ -198,7 +203,8 @@ const buttonTypes = [
   btnPrimaryEllipse,
   btnPrimaryOutlineEllipse,
   btnPrimaryLightEllipse,
-  btnPrimaryGrayShadowEllipse
+  btnPrimaryGrayShadowEllipse,
+  btnPrimaryShadowEllipse
 ] 
 
 //Return the wanted button styles according the type props that send to the component
