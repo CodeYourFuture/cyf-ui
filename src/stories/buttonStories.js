@@ -115,7 +115,7 @@ storiesOf("Button", module)
       variant="btnErrorShadow"
     />
   ))
-  // devider Button
+  // divider Button
   .add("divider", () => (
     <Button
       onClick={action("click")}
@@ -170,13 +170,13 @@ storiesOf("Button", module)
       variant="btnPrimaryEllipse"
     />
   ))
-  // .add("ellipse outline", () => (
-  //   <Button
-  //     label="+"
-  //     onClick={action("click")}
-  //     variant="btn btn-primary-outline ellipse"
-  //   />
-  // ))
+  .add("ellipse outline", () => (
+    <Button
+      label="+"
+      onClick={action("click")}
+      variant="btnPrimaryOutlineEllipse"
+    />
+   ))
   // .add("ellipse-light", () => (
   //   <Button
   //     onClick={action("click")}
