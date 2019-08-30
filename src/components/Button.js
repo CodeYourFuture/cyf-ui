@@ -14,7 +14,7 @@ const btnPrimary = {
 
 const btnPrimaryOutlined = {
   name :"btnPrimaryOutlined",
-   color: "#2196f3",
+  color: "#2196f3",
   background: "#ffffff",
   border: "2px solid #03a9f4"
 };
