@@ -10,7 +10,7 @@ const CardWrapper = styled.article`
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12),
     0px 2px 4px rgba(0, 0, 0, 0.14);
   border-radius: 5px;
-  position: absolute;
+  // position: absolute;
   width: 70%;
   height: 50%;
   font-family: "Open Sans", sans-serif;

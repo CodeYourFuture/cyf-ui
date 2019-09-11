@@ -5,7 +5,10 @@ import Button from "../components/Button";
 import ButtonDocumentation from "../Documentation/Button";
 
 storiesOf("Button", module)
-  .add("primary", () => <ButtonDocumentation />)
+  .add("documentation", () => <ButtonDocumentation />)
+  .add("primary", () => (
+    <Button label="Button" onClick={action("click")} variant="btnPrimary" />
+  ))
   .add("primary outline", () => (
     <Button
       label="Button"
