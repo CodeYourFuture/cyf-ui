@@ -18,9 +18,9 @@ const ButtonDocumentation = () => {
         <div>
           <h3>Usage</h3>
           <p>Simple</p>
-          <pre>{`<Button label="Button" variant="btnPrimary" />`}</pre>
+          <pre>{`<Button label="Button" onClick={handleClick} variant="btnPrimary" />`}</pre>
           <p>With outline</p>
-          <pre>{`<Button label="Button" variant="btnPrimaryOutlined" />`}</pre>
+          <pre>{`<Button label="Button" onClick={handleClick} variant="btnPrimaryOutlined" />`}</pre>
           <h3>Properties</h3>
           <table>
             <thead>
