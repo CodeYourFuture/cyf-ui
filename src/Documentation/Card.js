@@ -26,23 +26,27 @@ const CardDocumentation = () => {
         <div>
           <h3>Usage</h3>
           <p>Simple card</p>
-          <pre>{`<Card
+          <pre>{`
+    <Card
       className="card"
       title="Sololearn: HTML, CSS and JS"
-      body="Your first tutorial! This basic HTML and CSS tutorial will help you understand how web pages look they way they do. Have fun!"
+      body={body}
       buttonsContainerClass="buttonsContainerClass"
       btnBodyHeaderContainer="btnBodyHeaderContainer"
       divider={false}
-    />`}</pre>
+    />
+`}</pre>
           <p>With divider</p>
-          <pre>{`<Card
+          <pre>{`
+    <Card
       className="card"
       title="Sololearn: HTML, CSS and JS"
-      body="Your first tutorial! This basic HTML and CSS tutorial will help you understand how web pages look they way they do. Have fun!"
+      body={body}
       buttonsContainerClass="buttonsContainerClass"
       btnBodyHeaderContainer="btnBodyHeaderContainer"
       divider={true}
-    />`}</pre>
+    />          
+          `}</pre>
           <h3>Properties</h3>
           <table>
             <thead>
