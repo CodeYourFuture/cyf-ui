@@ -231,6 +231,7 @@ const StyledButton = styled.button`
   text-transform: capitalize;
   padding: ${(props) => props.variant.padding || "8px 32px"};
   box-shadow: ${(props) => props.variant.boxShadow || "none"};
+
   border: ${(props) => props.variant.border || "none"};
   background: ${(props) => props.variant.background};
   opacity: ${(props) => props.variant.opacity || "initial"};
