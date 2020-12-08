@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Button matches snapshots 1`] = `
-<button
-  class="sc-bdVaJa jWwBJW"
->
-  Click Me
-</button>
-`;
