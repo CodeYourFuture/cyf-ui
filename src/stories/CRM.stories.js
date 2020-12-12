@@ -23,7 +23,7 @@ export const CRMLikeStory = () => {
     <Table width="100%">
       <thead>
         <TableRow>
-          <TableHead>No</TableHead>
+          <TableHead>Nos</TableHead>
           <TableHead>check</TableHead>
           <TableHead>call</TableHead>
           <TableHead>emoji</TableHead>
