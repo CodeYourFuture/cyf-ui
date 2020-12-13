@@ -26,23 +26,44 @@ export const TableColumn = styled.td`
 export const TableRow = styled.tr`
   cursor: pointer;
   height: 40px;
+  position: relative;
 
   &:hover {
     background-color: #f3f3f3;
   }
 `;
 
-export const TableRowWithDetails = ({ itemDetails, children }) => {
+export const Dir = styled.tr`
+  position: absolute;
+  width: 100%;
+  background: #f3f3f3;
+`;
+
+const ItemDetails = () => {
+  return (
+    <ul>
+      <li>City</li>
+      <li>Age</li>
+      <li>Number</li>
+      <li>Email</li>
+      <li>Started</li>
+      <li>Refugee</li>
+    </ul>
+  );
+};
+
+export const TableRowWithDetails = ({ children }) => {
   const [viewDetail, setViewDetail] = React.useState(false);
   const toggle = () => setViewDetail(!viewDetail);
 
   return (
     <>
       <TableRow onClick={toggle}>{children}</TableRow>
-
       {viewDetail ? (
         <TableRow>
-          <div>{itemDetails}</div>
+          <Dir>
+            <ItemDetails />
+          </Dir>
         </TableRow>
       ) : null}
     </>
@@ -51,5 +72,4 @@ export const TableRowWithDetails = ({ itemDetails, children }) => {
 
 TableRowWithDetails.propTypes = {
   children: PropTypes.any.isRequired,
-  itemDetails: PropTypes.any.isRequired,
 };

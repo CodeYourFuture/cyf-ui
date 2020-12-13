@@ -64,37 +64,24 @@ export const DefaultTable = () => {
   );
 };
 
-const ItemDetails = () => {
-  return (
-    <ul>
-      <li>City</li>
-      <li>Age</li>
-      <li>Number</li>
-      <li>Email</li>
-      <li>Started</li>
-      <li>Refugee</li>
-    </ul>
-  );
-};
-
 export const TableWithItemDetailsRows = () => {
   return (
     <Table width="100%">
       <thead>
         <TableRow>
-          <TableHead>No</TableHead>
-          <TableHead>check</TableHead>
-          <TableHead>call</TableHead>
-          <TableHead>emoji</TableHead>
-          <TableHead>name</TableHead>
-          <TableHead>progress</TableHead>
-          <TableHead>date</TableHead>
+          <TableHead />
+          <TableHead />
+          <TableHead />
+          <TableHead />
+          <TableHead>Name</TableHead>
+          <TableHead>Steps</TableHead>
+          <TableHead>Start date</TableHead>
         </TableRow>
       </thead>
 
       <tbody>
         {applicants.map((applicant) => (
-          <TableRowWithDetails key={applicant.id} itemDetails={<ItemDetails />}>
+          <TableRowWithDetails key={applicant.id}>
             <TableColumn>{applicant.id}</TableColumn>
             <TableColumn>{applicant.check}</TableColumn>
             <TableColumn>{applicant.call}</TableColumn>

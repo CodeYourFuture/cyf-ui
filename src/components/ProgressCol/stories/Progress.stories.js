@@ -1,5 +1,5 @@
 import React from "react";
-import { ProgressCheck } from "./index";
+import { ProgressCheck } from "..";
 
 export default {
   title: "Components/Progress",
