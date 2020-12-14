@@ -10,7 +10,8 @@ import {
 // import { Button } from "../components/Button";
 import { Checkbox } from "../components/Checkbox";
 import { CallEmoji, SmileEmoji } from "../components/Emoji";
-import { ProgressTick } from "../components/ProgressCol/stories/Progress.stories";
+import { ProgressCheck } from "../components/ProgressCol";
+import { Circle } from "../components/Circle";
 
 import applicants from "./applicants";
 
@@ -50,9 +51,10 @@ export const CRMLikeStory = () => {
             </TableColumn>
             <TableColumn>{applicant.name}</TableColumn>
             <TableColumn>
-              <ProgressTick />
-              <ProgressTick />
-              <ProgressTick />
+              <ProgressCheck count={applicant.stepProgress} />
+            </TableColumn>
+            <TableColumn>
+              <Circle>5</Circle>
             </TableColumn>
             <TableColumn>{applicant.date}</TableColumn>
           </TableRowWithDetails>
