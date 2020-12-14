@@ -37,7 +37,7 @@ export const CRMLikeStory = () => {
 
       <tbody>
         {applicants.map((applicant) => (
-          <TableRowWithDetails key={applicant.id}>
+          <TableRowWithDetails key={applicant.id} detailComponentColSpan="7">
             <TableColumn>{applicant.id}</TableColumn>
             <TableColumn>
               <Checkbox />

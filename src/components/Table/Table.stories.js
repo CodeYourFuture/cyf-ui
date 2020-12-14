@@ -81,7 +81,7 @@ export const TableWithItemDetailsRows = () => {
 
       <tbody>
         {applicants.map((applicant) => (
-          <TableRowWithDetails key={applicant.id}>
+          <TableRowWithDetails colSpan="7" key={applicant.id}>
             <TableColumn>{applicant.id}</TableColumn>
             <TableColumn>{applicant.check}</TableColumn>
             <TableColumn>{applicant.call}</TableColumn>

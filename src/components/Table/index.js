@@ -33,12 +33,6 @@ export const TableRow = styled.tr`
   }
 `;
 
-export const Dir = styled.td`
-  position: relative;
-  width: 100%;
-  background: #f3f3f3;
-`;
-
 export const Ul = styled.ul`
   list-style-type: none;
 `;
@@ -69,7 +63,7 @@ const ItemDetails = () => {
   );
 };
 
-export const TableRowWithDetails = ({ children }) => {
+export const TableRowWithDetails = ({ detailComponentColSpan, children }) => {
   const [viewDetail, setViewDetail] = React.useState(false);
   const toggle = () => setViewDetail(!viewDetail);
 
@@ -77,10 +71,10 @@ export const TableRowWithDetails = ({ children }) => {
     <>
       <TableRow onClick={toggle}>{children}</TableRow>
       {viewDetail ? (
-        <TableRow>
-          <Dir colSpan="7">
+        <TableRow colSpan={detailComponentColSpan}>
+          <TableColumn colSpan={detailComponentColSpan}>
             <ItemDetails />
-          </Dir>
+          </TableColumn>
         </TableRow>
       ) : null}
     </>
@@ -88,5 +82,6 @@ export const TableRowWithDetails = ({ children }) => {
 };
 
 TableRowWithDetails.propTypes = {
+  detailComponentColSpan: PropTypes.string.isRequired,
   children: PropTypes.any.isRequired,
 };
