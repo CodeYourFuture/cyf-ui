@@ -18,18 +18,18 @@ const applicants = [
     check: "true",
     call: "true",
     emoji: "happy",
-    name: "Serkan Cavus",
+    name: "Applicant 1",
     progress: "tick",
-    date: "date",
+    date: "2020-12-11",
   },
   {
     id: 2,
     check: "true",
     call: "true",
     emoji: "happy",
-    name: "Someone else",
+    name: "Applicant 2",
     progress: "tick",
-    date: "date",
+    date: "2020-12-12",
   },
 ];
 

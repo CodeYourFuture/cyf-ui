@@ -33,22 +33,39 @@ export const TableRow = styled.tr`
   }
 `;
 
-export const Dir = styled.tr`
-  position: absolute;
+export const Dir = styled.td`
+  position: relative;
   width: 100%;
   background: #f3f3f3;
 `;
 
+export const Ul = styled.ul`
+  list-style-type: none;
+`;
+
+const Div = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
 const ItemDetails = () => {
   return (
-    <ul>
-      <li>City</li>
-      <li>Age</li>
-      <li>Number</li>
-      <li>Email</li>
-      <li>Started</li>
-      <li>Refugee</li>
-    </ul>
+    <Div>
+      <div>
+        <Ul>
+          <li>City: London</li>
+          <li>Age: 42</li>
+          <li>Number: 07400123446</li>
+        </Ul>
+      </div>
+      <div>
+        <Ul>
+          <li>Email: email@email.com</li>
+          <li>Started: 2020-12-10</li>
+          <li>Refugee: Yes</li>
+        </Ul>
+      </div>
+    </Div>
   );
 };
 
@@ -61,7 +78,7 @@ export const TableRowWithDetails = ({ children }) => {
       <TableRow onClick={toggle}>{children}</TableRow>
       {viewDetail ? (
         <TableRow>
-          <Dir>
+          <Dir colSpan="7">
             <ItemDetails />
           </Dir>
         </TableRow>
