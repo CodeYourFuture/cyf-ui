@@ -7,5 +7,5 @@ export default {
 };
 
 export const ProgressTick = () => {
-  return <ProgressCheck />;
+  return <ProgressCheck count={2} />;
 };
