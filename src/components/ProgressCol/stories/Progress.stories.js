@@ -1,5 +1,5 @@
 import React from "react";
-import { ProgressCheck } from "./index";
+import { ProgressCheck } from "..";
 
 export default {
   title: "Components/Progress",
@@ -7,5 +7,5 @@ export default {
 };
 
 export const ProgressTick = () => {
-  return <ProgressCheck />;
+  return <ProgressCheck count={2} />;
 };

@@ -6,9 +6,12 @@ import {
   TableRowWithDetails,
   TableColumn,
 } from "../components/Table";
+
 // import { Button } from "../components/Button";
 import { Checkbox } from "../components/Checkbox";
-// import { CallEmoji } from "../components/Emoji";
+import { CallEmoji, SmileEmoji } from "../components/Emoji";
+import { ProgressCheck } from "../components/ProgressCol";
+import { Circle } from "../components/Circle";
 
 import applicants from "./applicants";
 
@@ -16,37 +19,43 @@ export default {
   title: "CRM Like Dashboard",
 };
 
-const CrmItemDetail = () => <div>CRM Item Detail</div>;
+// const CrmItemDetail = () => <div>CRM Item Detail</div>;
 
 export const CRMLikeStory = () => {
   return (
     <Table width="100%">
       <thead>
         <TableRow>
-          <TableHead>No</TableHead>
-          <TableHead>check</TableHead>
-          <TableHead>call</TableHead>
-          <TableHead>emoji</TableHead>
-          <TableHead>name</TableHead>
-          <TableHead>progress</TableHead>
-          <TableHead>date</TableHead>
+          <TableHead />
+          <TableHead />
+          <TableHead />
+          <TableHead />
+          <TableHead>Name</TableHead>
+          <TableHead>Steps</TableHead>
+          <TableHead>Start date</TableHead>
         </TableRow>
       </thead>
 
       <tbody>
         {applicants.map((applicant) => (
-          <TableRowWithDetails
-            key={applicant.id}
-            itemDetails={<CrmItemDetail />}
-          >
+          <TableRowWithDetails key={applicant.id} detailComponentColSpan="7">
+            <TableColumn>{applicant.id}</TableColumn>
             <TableColumn>
               <Checkbox />
             </TableColumn>
-            <TableColumn>{applicant.check}</TableColumn>
-            <TableColumn>{applicant.call}</TableColumn>
-            <TableColumn>{applicant.emoji}</TableColumn>
+            <TableColumn>
+              <CallEmoji color="#3455DB" />
+            </TableColumn>
+            <TableColumn>
+              <SmileEmoji color="#28A228" />
+            </TableColumn>
             <TableColumn>{applicant.name}</TableColumn>
-            <TableColumn>{applicant.progress}</TableColumn>
+            <TableColumn>
+              <ProgressCheck count={applicant.stepProgress} />
+            </TableColumn>
+            <TableColumn>
+              <Circle>5</Circle>
+            </TableColumn>
             <TableColumn>{applicant.date}</TableColumn>
           </TableRowWithDetails>
         ))}

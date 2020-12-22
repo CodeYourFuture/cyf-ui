@@ -18,18 +18,18 @@ const applicants = [
     check: "true",
     call: "true",
     emoji: "happy",
-    name: "Serkan Cavus",
+    name: "Applicant 1",
     progress: "tick",
-    date: "date",
+    date: "2020-12-11",
   },
   {
     id: 2,
     check: "true",
     call: "true",
     emoji: "happy",
-    name: "Someone else",
+    name: "Applicant 2",
     progress: "tick",
-    date: "date",
+    date: "2020-12-12",
   },
 ];
 
@@ -64,37 +64,24 @@ export const DefaultTable = () => {
   );
 };
 
-const ItemDetails = () => {
-  return (
-    <ul>
-      <li>City</li>
-      <li>Age</li>
-      <li>Number</li>
-      <li>Email</li>
-      <li>Started</li>
-      <li>Refugee</li>
-    </ul>
-  );
-};
-
 export const TableWithItemDetailsRows = () => {
   return (
     <Table width="100%">
       <thead>
         <TableRow>
-          <TableHead>No</TableHead>
-          <TableHead>check</TableHead>
-          <TableHead>call</TableHead>
-          <TableHead>emoji</TableHead>
-          <TableHead>name</TableHead>
-          <TableHead>progress</TableHead>
-          <TableHead>date</TableHead>
+          <TableHead />
+          <TableHead />
+          <TableHead />
+          <TableHead />
+          <TableHead>Name</TableHead>
+          <TableHead>Steps</TableHead>
+          <TableHead>Start date</TableHead>
         </TableRow>
       </thead>
 
       <tbody>
         {applicants.map((applicant) => (
-          <TableRowWithDetails key={applicant.id} itemDetails={<ItemDetails />}>
+          <TableRowWithDetails colSpan="7" key={applicant.id}>
             <TableColumn>{applicant.id}</TableColumn>
             <TableColumn>{applicant.check}</TableColumn>
             <TableColumn>{applicant.call}</TableColumn>

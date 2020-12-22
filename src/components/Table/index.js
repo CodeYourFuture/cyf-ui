@@ -26,23 +26,55 @@ export const TableColumn = styled.td`
 export const TableRow = styled.tr`
   cursor: pointer;
   height: 40px;
+  position: relative;
 
   &:hover {
     background-color: #f3f3f3;
   }
 `;
 
-export const TableRowWithDetails = ({ itemDetails, children }) => {
+export const Ul = styled.ul`
+  list-style-type: none;
+`;
+
+const Div = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
+const ItemDetails = () => {
+  return (
+    <Div>
+      <div>
+        <Ul>
+          <li>City: London</li>
+          <li>Age: 42</li>
+          <li>Number: 07400123446</li>
+        </Ul>
+      </div>
+      <div>
+        <Ul>
+          <li>Email: email@email.com</li>
+          <li>Started: 2020-12-10</li>
+          <li>Refugee: Yes</li>
+        </Ul>
+      </div>
+    </Div>
+  );
+};
+
+export const TableRowWithDetails = ({ detailComponentColSpan, children }) => {
   const [viewDetail, setViewDetail] = React.useState(false);
   const toggle = () => setViewDetail(!viewDetail);
 
   return (
     <>
       <TableRow onClick={toggle}>{children}</TableRow>
-
       {viewDetail ? (
-        <TableRow>
-          <div>{itemDetails}</div>
+        <TableRow colSpan={detailComponentColSpan}>
+          <TableColumn colSpan={detailComponentColSpan}>
+            <ItemDetails />
+          </TableColumn>
         </TableRow>
       ) : null}
     </>
@@ -50,6 +82,6 @@ export const TableRowWithDetails = ({ itemDetails, children }) => {
 };
 
 TableRowWithDetails.propTypes = {
+  detailComponentColSpan: PropTypes.string.isRequired,
   children: PropTypes.any.isRequired,
-  itemDetails: PropTypes.any.isRequired,
 };
