@@ -88,6 +88,9 @@ jobs:
           name: Set env variables
           command: echo 'export VERSION=$(echo $CIRCLE_SHA1 | cut -c -7)' >> $BASH_ENV
       - run:
+          name: Install dependencies
+          command: yarn install
+      - run:
           name: Build Package
           command: yarn babel:build
       - persist_to_workspace:
