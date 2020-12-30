@@ -1,6 +1,6 @@
 {
   "name": "@codeyourfuture/cyf-ui",
-  "version": "1.1.0",
+  "version": "0.1.0",
   "module": "/dist/index.js",
   "private": false,
   "homepage": "https://github.com/CodeYourFuture/cyf-ui#readme",
@@ -23,7 +23,7 @@
     "styled-components": "^4.4.1"
   },
   "scripts": {
-    "babel:build": "babel src/components --out-dir dist --source-maps inline --copy-files",
+    "babel:build": "babel ./src --out-dir dist --source-maps inline --ignore 'src/**/__tests__/**/*.js' --ignore 'src/**/stories/**/*.js'",
     "lint": "eslint --fix src/",
     "storybook:run": "start-storybook -p 9009",
     "build-storybook": "build-storybook",
