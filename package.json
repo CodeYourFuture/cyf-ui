@@ -20,13 +20,15 @@
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "release-it": "^14.2.2",
     "styled-components": "^4.4.1"
   },
   "scripts": {
     "babel:build": "babel ./src --out-dir dist --source-maps inline --ignore 'src/**/__tests__/**/*.js' --ignore 'src/**/stories/**/*.js'",
-    "lint": "eslint --fix src/",
-    "storybook:run": "start-storybook -p 9009",
     "build-storybook": "build-storybook",
+    "storybook:run": "start-storybook -p 9009",
+    "lint": "eslint --fix src/",
+    "release": "release-it",
     "test": "jest"
   },
   "browserslist": {
@@ -79,5 +81,15 @@
     "*.js": [
       "npm run lint"
     ]
+  },
+  "release-it": {
+    "git": {
+      "commit": false,
+      "requireCleanWorkingDir": false
+    },
+    "github": {
+      "release": true,
+      "tokenRef": "GITHUB_PACKAGES_TOKEN"
+    }
   }
 }
