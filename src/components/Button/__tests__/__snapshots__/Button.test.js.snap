@@ -1,8 +1,45 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Button matches snapshots for primary 1`] = `
+.c0 {
+  box-sizing: border-box;
+  border-radius: 2px;
+  border: none;
+  padding: 0.575rem 0.85rem;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  -webkit-letter-spacing: 0.01em;
+  -moz-letter-spacing: 0.01em;
+  -ms-letter-spacing: 0.01em;
+  letter-spacing: 0.01em;
+  text-align: center;
+  cursor: pointer;
+  color: #ffffff;
+  background: #3455db;
+  -webkit-transition: background 0.5s ease-in-out;
+  transition: background 0.5s ease-in-out;
+  -webkit-transition: color 0.1s ease-in-out;
+  transition: color 0.1s ease-in-out;
+}
+
+.c0:active {
+  -webkit-transform: translateY(1px);
+  -ms-transform: translateY(1px);
+  transform: translateY(1px);
+}
+
+.c0:active,
+.c0:hover {
+  background: #ffffff;
+  color: #3455db;
+  border: 2px solid #3455db;
+}
+
 <button
-  class="sc-bdVaJa euJmou"
+  class="c0"
 >
   Click Me
 </button>
