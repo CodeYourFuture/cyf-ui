@@ -35,7 +35,6 @@ export const Tabs = ({ children }) => {
 
           return (
             <TabLabel
-              data-automation-id="label"
               key={label}
               active={activeTab === label}
               label={label}
