@@ -24,7 +24,7 @@ const Li = styled.li`
 
 export const TabLabel = ({ clickTabItem, active, label }) => {
   return (
-    <Li active={active} onClick={() => clickTabItem(label)} aria-hidden="true">
+    <Li data-automation-id="label" active={active} onClick={() => clickTabItem(label)} aria-hidden="true">
       {label}
     </Li>
   );
