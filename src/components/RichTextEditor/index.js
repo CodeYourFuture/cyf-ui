@@ -6,13 +6,11 @@ import ReactQuill, { Quill } from "react-quill";
 import "react-quill/dist/quill.snow.css";
 import "./styles.css";
 
-const CustomHeart = () => <span>♥</span>;
-
-function insertHeart() {
-  const cursorPosition = this.quill.getSelection().index;
-  this.quill.insertText(cursorPosition, "♥");
-  this.quill.setSelection(cursorPosition + 1);
-}
+// function insertHeart() {
+//   const cursorPosition = this.quill.getSelection().index;
+//   this.quill.insertText(cursorPosition, "♥");
+//   this.quill.setSelection(cursorPosition + 1);
+// }
 
 /*
  * Custom toolbar component including the custom heart button and dropdowns
@@ -41,9 +39,6 @@ const CustomToolbar = () => (
     <select className="ql-color" />
     <select className="ql-background" />
     <button type="button" className="ql-clean" />
-    <button type="button" className="ql-insertHeart">
-      <CustomHeart />
-    </button>
   </div>
 );
 
@@ -62,6 +57,7 @@ Font.whitelist = [
   "helvetica",
   "lucida",
 ];
+
 Quill.register(Font, true);
 
 /*
@@ -71,10 +67,6 @@ class Editor extends React.Component {
   static modules = {
     toolbar: {
       container: "#toolbar",
-      handlers: {
-        // eslint-disable-next-line object-shorthand
-        insertHeart: insertHeart,
-      },
     },
   };
 
@@ -98,7 +90,6 @@ class Editor extends React.Component {
   constructor(props) {
     super(props);
     this.state = { editorHtml: "" };
-    this.handleClick = this.handleClick.bind(this);
   }
 
   handleChange = (html) => {
