@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Checkbox/> test matches snapshot 1`] = `
+.c0 {
+  color: "yellow";
+  background: "blue";
+  font-size: 18px;
+}
+
+<label
+  class="c0"
+>
+  <input
+    checked=""
+    type="checkbox"
+  />
+  include VAT
+</label>
+`;
