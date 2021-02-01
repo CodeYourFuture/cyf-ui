@@ -16,13 +16,12 @@ export const Default = () => (
   <Wrapper>
     <h1>Tabs Component Demo</h1>
     <Tabs>
-      <Tab label="Steps">
-        This is <em>Tab-1-Steps</em>!
+      <Tab  label="Steps" >
+       This is <em>Tab-1-Steps</em>!
       </Tab>
-      <Tab label="Calls">
-        This is <em>Tab-2-Calls</em>!
-      </Tab>
-      <Tab label="Workshops">
+      <Tab label="Calls" info="Hello From Tab-2-Calls"/ >
+       
+      <Tab  label="Workshops" >
         This is <em>Tab-3-Workshops</em>!
       </Tab>
     </Tabs>
