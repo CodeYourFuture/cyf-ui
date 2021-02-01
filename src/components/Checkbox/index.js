@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
-const StyledCheckbox = styled.div`
+const StyledCheckbox = styled.label`
   color: "yellow";
   background: "blue";
   font-size: 18px;
