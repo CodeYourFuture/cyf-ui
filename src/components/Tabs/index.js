@@ -8,17 +8,7 @@ const TabList = styled.ol`
   padding-left: 0;
 `;
 
-// export const Tab = styled.div``;
-export const Container = styled.div``;
-
-export const Tab = ({label, info}) => {
-  return(
-    <Container data-automation-id="label" label = {label}>
-     <p>{ info }</p>
-    </Container>
-  )
-
-}
+export const Tab = styled.div``;
 
 export const Tabs = ({ children }) => {
   const [activeTab, setActiveTab] = useState(children[0].props.label);
