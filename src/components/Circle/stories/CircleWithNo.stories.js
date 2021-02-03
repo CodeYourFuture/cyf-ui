@@ -1,11 +1,18 @@
-import React from "react";
-import { Circle } from "..";
+import React, { useState } from "react";
+import { CircleWithNum } from "..";
 
 export default {
   title: "Components/CircleWithNo",
-  component: Circle,
+  component: CircleWithNum,
 };
 
 export const CircleNo = () => {
-  return <Circle>5</Circle>;
+  const [num, setNum] = useState(0);
+  return (
+    <CircleWithNum
+      data-testid="clc"
+      num={num}
+      onClick={() => setNum(num + 1)}
+    />
+  );
 };
