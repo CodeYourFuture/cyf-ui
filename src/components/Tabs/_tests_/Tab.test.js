@@ -4,8 +4,14 @@ import { Tab } from "..";
 import { TabLabel } from "../TabLabel";
 
 describe("<Tab/>", () => {
-  test("renders without crushing", () => {
-    render(<Tab label="Steps" />);
+  test("matches the saved snapshot", () => {
+    const label = "Steps";
+    const { container } = render(
+      <Tab label={label}>
+        This is <em>Tab-1-Steps</em>!
+      </Tab>
+    );
+    expect(container.firstChild).toMatchSnapshot();
   });
   test("displays the given label name", () => {
     const label = "NewCalls";
@@ -19,7 +25,7 @@ describe("<Tab/>", () => {
 });
 
 describe("<TabLabel/>", () => {
-  test("renders without crushing", () => {
+  test("", () => {
     const activeTab = false;
     const label = "";
     const clickTabItem = jest.fn(() => null);
@@ -43,16 +49,5 @@ describe("<TabLabel/>", () => {
     const tabList = getByTestId("labels");
     fireEvent.click(tabList);
     expect(mockOnClick).toHaveBeenCalledWith(testLabel);
-  });
-  test("clickTab with mocked function", () => {
-    const activeTab = false;
-    const label = "Steps";
-    const click = jest.fn(() => null);
-    const { getByText } = render(
-      <TabLabel active={!activeTab} label={label} clickTabItem={click} />
-    );
-    const tabList = getByText(label);
-    fireEvent.click(tabList);
-    expect(click).toHaveBeenCalled();
   });
 });

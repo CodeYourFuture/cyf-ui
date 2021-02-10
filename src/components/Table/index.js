@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import { Tabs, Tab } from "../Tabs";
 
 export const Table = styled.table`
   position: relative;
@@ -74,6 +75,17 @@ export const TableRowWithDetails = ({ detailComponentColSpan, children }) => {
         <TableRow colSpan={detailComponentColSpan}>
           <TableColumn colSpan={detailComponentColSpan}>
             <ItemDetails />
+            <Tabs>
+              <Tab label="Steps">
+                This is <em>Tab-1-Steps</em>!
+              </Tab>
+              <Tab label="Calls">
+                This is <em>Tab-2-Calls</em>!
+              </Tab>
+              <Tab label="Workshops">
+                This is <em>Tab-3-Workshops</em>!
+              </Tab>
+            </Tabs>
           </TableColumn>
         </TableRow>
       ) : null}

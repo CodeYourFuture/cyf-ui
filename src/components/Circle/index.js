@@ -18,7 +18,7 @@ export const Circle = styled.div`
 
 export const CircleWithNum = ({ num, onClick }) => {
   return (
-    <Circle data-testid="clc" onClick={onClick}>
+    <Circle data-testid="circle" onClick={onClick}>
       {num}
     </Circle>
   );

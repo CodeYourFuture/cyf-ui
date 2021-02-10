@@ -1,3 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<TabLabel/> renders without crushing 1`] = `[MockFunction]`;
+exports[`<Tab/> matches the saved snapshot 1`] = `
+<div
+  class=""
+  label="Steps"
+>
+  This is 
+  <em>
+    Tab-1-Steps
+  </em>
+  !
+</div>
+`;
