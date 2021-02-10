@@ -29,10 +29,10 @@ describe("<TabLabel/>", () => {
     const activeTab = false;
     const label = "";
     const clickTabItem = jest.fn(() => null);
-    render(
+    const { container } = render(
       <TabLabel active={!activeTab} label={label} clickTabItem={clickTabItem} />
     );
-    expect(clickTabItem).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
   });
   test("clickTab", () => {
     const mockOnClick = jest.fn();

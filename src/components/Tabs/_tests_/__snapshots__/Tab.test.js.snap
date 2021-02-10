@@ -1,14 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Tab/> matches the saved snapshot 1`] = `
-<div
-  class=""
-  label="Steps"
->
-  This is 
-  <em>
-    Tab-1-Steps
-  </em>
-  !
-</div>
+exports[`<TabLabel/>  1`] = `
+.c0 {
+  display: inline-block;
+  list-style: none;
+  margin-bottom: -1px;
+  margin-right: 0.5rem;
+  background-color: lightgrey;
+  color: #074a95;
+  font-weight: 700;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  background-color: white;
+  border: solid rgb(246,245,247);
+  border-width: 1px 1px 0 1px;
+}
+
+<li
+  aria-hidden="true"
+  class="c0"
+  data-testid="labels"
+/>
 `;

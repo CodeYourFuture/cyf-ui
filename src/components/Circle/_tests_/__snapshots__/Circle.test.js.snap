@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CircleWithNum/> Match the snapShot 1`] = `
+.c0 {
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  padding: 3px;
+  background: #335eff;
+  border: 2px solid #335eff;
+  color: white;
+  text-align: center;
+  font-weight: 800;
+  font: 13px Arial,sans-serif;
+}
+
+<div
+  class="c0"
+  data-testid="circle"
+>
+  0
+</div>
+`;
