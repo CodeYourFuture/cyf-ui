@@ -13,18 +13,19 @@ export const Wrapper = styled.div`
   flex-direction: row;
 `;
 export const No = styled.div`
-  margin-top: 13px;
-  font: 11px Arial, sans-serif;
+  margin-top: 9px;
+  font: 16px Arial, sans-serif;
   font-weight: 700;
 `;
-export const ProgressCheck = ({ count }) => {
+export const ProgressCheck = ({ count, onClick }) => {
   return (
     <Wrapper>
       <Check icon={faCheck} />
-      <No>{count}</No>
+      <No onClick={onClick}>{count}</No>
     </Wrapper>
   );
 };
 ProgressCheck.propTypes = {
   count: PropTypes.number.isRequired,
+  onClick: PropTypes.func.isRequired,
 };

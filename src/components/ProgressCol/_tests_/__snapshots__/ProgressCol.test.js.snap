@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProgressCol/> Match the Snapshot 1`] = `
+.c1 {
+  color: black;
+  font-size: 24px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c2 {
+  margin-top: 9px;
+  font: 16px Arial,sans-serif;
+  font-weight: 700;
+}
+
+<div
+  class="c0"
+>
+  <svg
+    aria-hidden="true"
+    class="svg-inline--fa fa-check fa-w-16 c1"
+    data-icon="check"
+    data-prefix="fas"
+    focusable="false"
+    role="img"
+    viewBox="0 0 512 512"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+      fill="currentColor"
+    />
+  </svg>
+  <div
+    class="c2"
+  >
+    0
+  </div>
+</div>
+`;
